@@ -1,10 +1,12 @@
-# dart-days
+# Dart и Flutter - не английский, но за час выучим
 
-Just me learning dart 
+План:
 
-# TODO
+1. first-dart-project
+  - В основном - чтение. Пара задач в качестве развлечения в файле collections.dart
+2. first_flutter_project
+  - Рисование формы авторизации
+3. firebase_auth_project
+  - Подключение firebase к  форме из 2. 
 
-- Drag'n'Drop
-- Navigator initial page that would be different with main app page
-- BLoC
-- RiverPod
+
