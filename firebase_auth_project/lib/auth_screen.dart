@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './auth.dart';
 
 class AuthScreen extends StatelessWidget {
   const AuthScreen({super.key});
@@ -18,11 +19,11 @@ class AuthForm extends StatelessWidget {
   final TextEditingController _emailController = TextEditingController();
   final TextEditingController _passwordController = TextEditingController();
 
-  _handleSubmit() {
+  Future<void> _handleSubmit() async {
     if (_formKey.currentState!.validate()) {
       final email = _emailController.value.text;
       final password = _passwordController.value.text;
-      print("email: $email, password: $password");
+      await Auth().signInWithEmailAndPassword(email, password);
     }
   }
 

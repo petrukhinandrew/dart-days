@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1070175546767",
+    "project_id": "mcs-mobdev-flutter",
+    "storage_bucket": "mcs-mobdev-flutter.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070175546767:android:edc275f14259825cb2affa",
+        "android_client_info": {
+          "package_name": "com.example.firebase_auth_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_et57oNcp7KDHUtr28jBYJel6f--uPhA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
