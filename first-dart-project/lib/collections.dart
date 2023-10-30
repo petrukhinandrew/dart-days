@@ -19,3 +19,28 @@ void main() {
   memo['lol'] = 5;
   assert(memo['kek'] == null);
 }
+
+// если хотите попрактиковаться
+// in: [1, 1, 2, 2, 3, 3] => out [1, 2, 3]
+// in: ["A", "a", "B", "a"] => out ["A", "a", "B"]
+
+List<T> filterUnique<T>(List<T> initialList) {
+  // узнайте, что такое Map.entries
+  for (int idx = 0; idx < initialList.length; ++idx) {
+    // понятно, что тут удобнее итерировать по-другому
+    // но теперь вы знаете, что так тоже можно
+  }
+  return List.empty();
+}
+
+extension Flatten<T> on List<List<T>> {
+  // так тут пишут функции расширения
+// в скопе можно написать функции,
+// которые можно будет использовать на типе List<List<T>> в данном случае
+  List<T> flatten() {
+    // this в этом месте будет иметь тип List<List<T>>
+    for (List<T> elem in this) {}
+
+    return [];
+  }
+}

@@ -532,10 +532,12 @@ class A {
 ## Что дальше
 
 1. Посмотреть и позапускать файлики в `lib`. Там показаны еще разные фичи!
-2. Для Flutter пригодятся `async/await`, `Stream`, `pubspec.yaml` - о них в соответствующем `кодлабе`
-2. Читать [роскошную документацию](https://dart.dev/guides). Чего там можно найти? 
+2. Написать код в `collections.dart`
+3. Для Flutter пригодятся `async/await`, `Stream`, `pubspec.yaml` - о них в соответствующем `кодлабе`
+4. Читать [роскошную документацию](https://dart.dev/guides). Чего там можно найти? 
     - в Dart как в Kotlin есть функции-расширения
     - есть `mixin class`
     - `switch () {}` - не Haskell pattern-matching, но и не C++ `switch`
     - организация файлов в библиотеки, `show`, `export`
     - тестирование
+    - [Effective Dart](https://dart.dev/effective-dart)
