@@ -62,7 +62,7 @@ class MyDao {
 
 ## ServiceLocator
 
-Это первая попытка придумать `Dapendency Injector`. 
+Это первая попытка придумать `Dependency Injector`. 
 
 ### На пальцах
 
