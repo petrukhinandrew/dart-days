@@ -1,0 +1,11 @@
+<View
+android:id="@+id/ellipse_4"
+android:layout_width="477.92dp"
+android:layout_height="309.37dp"
+android:layout_alignParentLeft="true"
+android:layout_marginLeft="242.6dp"
+android:layout_alignParentTop="true"
+android:layout_marginTop="238.21dp"
+android:background="#FFE0D5"
+ />
+
