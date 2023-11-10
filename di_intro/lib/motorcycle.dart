@@ -12,6 +12,8 @@ abstract class Motorcycle {
   String get manufacturerName;
 }
 
+// TODO: собрать классы ниже, реализовать соответствующий интерфейс
+
 @injectable
 class HondaMotorcycle with InstanceCounter implements Motorcycle {
   final MotorcycleWheel wheel; // радиус 13.0
