@@ -15,8 +15,9 @@ abstract class Motorcycle {
 class HondaMotorcycle with InstanceCounter implements Motorcycle {
   final MotorcycleWheel wheel;
   final MotorcycleBody body;
-  final HondaManufacturer manufacturer;
-  HondaMotorcycle(this.manufacturer, this.body, @Named("13") this.wheel) {
+  final MotorcycleManufacturer manufacturer;
+  HondaMotorcycle(@Named.from(HondaManufacturer) this.manufacturer, this.body,
+      @Named("13") this.wheel) {
     newMotorcycle("Honda");
   }
 
@@ -34,9 +35,9 @@ class HondaMotorcycle with InstanceCounter implements Motorcycle {
 class KawasakiMotorcycle with InstanceCounter implements Motorcycle {
   final MotorcycleWheel wheel;
   final MotorcycleBody body;
-  final KawasakiManufacturer manufacturer;
-  KawasakiMotorcycle(
-      this.manufacturer, @Named("red") this.body, @Named("13") this.wheel) {
+  final MotorcycleManufacturer manufacturer;
+  KawasakiMotorcycle(@Named.from(KawasakiManufacturer) this.manufacturer,
+      @Named("red") this.body, @Named("13") this.wheel) {
     newMotorcycle("Kawasaki");
   }
 

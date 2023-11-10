@@ -6,7 +6,8 @@ abstract interface class MotorcycleManufacturer {
   double get capitalization;
 }
 
-@singleton
+@named
+@Singleton(as: MotorcycleManufacturer)
 class HondaManufacturer with InstanceCounter implements MotorcycleManufacturer {
   HondaManufacturer() {
     newManufacturer("Honda");
@@ -17,7 +18,8 @@ class HondaManufacturer with InstanceCounter implements MotorcycleManufacturer {
   double get capitalization => 100;
 }
 
-@singleton
+@named
+@Singleton(as: MotorcycleManufacturer)
 class KawasakiManufacturer
     with InstanceCounter
     implements MotorcycleManufacturer {
