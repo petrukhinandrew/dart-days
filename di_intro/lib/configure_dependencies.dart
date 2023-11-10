@@ -3,5 +3,7 @@ import 'package:injectable/injectable.dart';
 import 'configure_dependencies.config.dart';
 
 final getIt = GetIt.instance;
-@InjectableInit(initializerName: "lolkek")
-void configureDependencies() => getIt.lolkek();
+
+@InjectableInit()
+void configureDependencies(String currentEnv) =>
+    getIt.init(environment: currentEnv);

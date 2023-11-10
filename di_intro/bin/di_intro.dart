@@ -1,13 +1,18 @@
 import 'package:di_intro/configure_dependencies.dart';
-import 'package:di_intro/service_stuff.dart';
+import 'package:di_intro/instance_counter.dart';
+import 'package:di_intro/motorcycle.dart';
+import 'package:di_intro/motorcycle_body.dart';
 
 void main() async {
-  configureDependencies();
-  final t = getIt<ServiceB>();
-  final x = getIt<ApiUser>();
-  x.greet();
-  getIt<ApiUser>().greet();
-  t.sayHi();
-  final par = getIt<BackendService>(param1: 5);
-  print(par.url);
+  configureDependencies("dev");
+  // CounterUser t = getIt<CounterUser>();
+  // t.doThing();
+  // t.doThing();
+  // t.doThing();
+  // InstanceCounter.observeInstances();
+  // final List<Motorcycle> hondas =
+  //     List.generate(10, (idx) => getIt<HondaMotorcycle>());
+  // InstanceCounter.observeInstances();
+  final h = getIt<HondaMotorcycle>();
+  assert(h.bodyColor == MotorcycleColor.blue);
 }
